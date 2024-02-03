@@ -1,0 +1,24 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Attendance Detail</title>
+    <link rel="stylesheet" href="{% static 'student_detail.css' %}">
+</head>
+<body>
+    <div class='container'>
+    <h1>Course Attendance Detail</h1>
+    <p>Student: {{ attendance.student }}</p>
+    <p>Course: {{ attendance.course }}</p>
+    <p>Attendance: {{ attendance.attendance }}</p>
+    <!-- Add other details as needed -->
+    <a href="{% url 'courseattendance_update' attendance.id %}" class="update_course">Update Course Attendance</a>
+    <form action="{% url 'courseattendance_delete' attendance.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="delete_button">Delete Course Attendance</button>
+    </form>
+    <a href="{% url 'courseattendance_list' %}" class="back_course">Back to Course Attendance List</a>
+    </div
+</body>
+</html>
