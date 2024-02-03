@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Continuous Assessment</title>
+    <link rel="stylesheet" href="{% static 'continuousassessment_update.css' %}">
+</head>
+<body>
+    <h1>Add Continuous Assessment</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+    <a href="{% url 'continuousassessment_list' %}">Cancel</a>
+</body>
+</html>
