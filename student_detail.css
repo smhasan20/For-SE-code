@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px; /* Increased container width */
+    width: 90%; /* Adjusted width to make it slightly bigger */
+    padding: 40px; /* Increased container padding */
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 15px; /* Slightly increased rounded corners for a softer look */
+}
+
+/* Rest of your existing styles */
+
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+  }
+  h1 {
+    color: #333;
+    font-size: 28px; /* Increased heading font size */
+    margin-bottom: 25px; /* Increased margin-bottom for heading */
+}
+
+p {
+    margin-bottom: 20px; /* Increased margin-bottom for paragraphs */
+    font-size: 18px; /* Increased paragraph font size */
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+.update_student,
+.delete_button,
+.back_student {
+    display: inline-block; /* Align buttons horizontally */
+    margin-top: 15px; /* Increased margin-top for buttons */
+}
+button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 12px 18px; /* Increased button padding */
+    cursor: pointer;
+    border-radius: 7px; /* Increased button border-radius */
+    transition: background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: #c82333;
+}
+  /* Add more styles as needed for specific elements in your HTML */
+  
